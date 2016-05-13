@@ -1,0 +1,26 @@
+.main{
+	width: 900px;
+	height: 500px;
+	background: red;
+}
+.first{
+	width: 200px ;
+	height: 100px;
+	background: blue;
+	float: left;
+	margin: 50px;
+
+}
+
+.second{
+	width: 200px ;
+	height: 100px;
+	background: green;
+	float: right;
+	margin: 50px;
+}
+
+
+
+.main:hover .first, .main .second{ background: white; }
+.first:hover + .second{ background: brown;}
