@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<script>
+
+
+    var a = true;
+
+    function myFunction1() {
+        if (a) {
+            document.write("<button  onclick='myFunction1()'>Click Me!</button>");
+            document.write("<div style='background-color:red; width:100px;height:100px;'></div>");
+            document.close();
+            a = false;
+
+        } else {
+            document.write("<button  onclick='myFunction1()'>Click Me!</button>");
+            document.write("<div style='background-color:yellow;width:100px;height:100px;'></div>");
+            document.close();
+            a = true;
+        }
+    }
+    myFunction1();
+
+
+	</script>
+
+
+
+</body>
+</html>
