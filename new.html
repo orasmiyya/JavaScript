@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<script>
+
+
+
+	function myfunction1(a){
+		document.write("<div style='width:0;height:0;border-left:"+a+"px solid transparent;border-right:"+a+"px solid transparent;border-bottom:"+a+"px solid red;'></div>");
+		document.write("<div style='width:0;height:0;border-top:"+a+"px solid transparent;border-bottom:"+a+"px solid transparent;border-right:"+a+"px solid green;'></div>");
+		document.write("<div style='width:0;height:0;border-left:"+a+"px solid transparent;border-right:"+a+"px solid transparent;border-top:"+a+"px solid yellow;'></div>");
+		document.write("<div style='width:0;height:0;border-top:"+a+"px solid transparent;border-bottom:"+a+"px solid transparent;border-left:"+a+"px solid blue;'></div>");
+	}
+
+	myfunction1(25);
+	
+
+
+
+	</script>
+
+
+<!-- 
+<div style="width: 0;height: 0;
+	border-left:25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid #ccc;">
+</div>
+
+<div style="width: 0;height: 0;
+	border-left:25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 25px solid #000;">
+</div>
+
+<div style="width: 0;height: 0;
+	border-left:25px solid transparent;
+	border-right: 25px solid #ddd;
+	border-bottom: 25px solid transparent;">
+</div>
+
+<div style="width: 0;height: 0;
+	border-left:25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid red;">
+</div>
+ -->
+</body>
+</html>
