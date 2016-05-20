@@ -9,13 +9,14 @@
 <body>
     <script>
 
-    var a = Number(prompt("ENTER Number", ""));
-    if ((a%2==0 && a!=2) || (a%3==0 && a!=3) || (a%5==0 && a!=5)){
-        document.write("Bu murekkeb ededdir!");
-    }
-    else{
-        document.write("Bu sade ededdir!");
-    }
+var a=Number(prompt("Enter", ""));
+for(i=1;i<a;i++){
+if((i%2==0 && i!=2) || (i%3==0 && i!=3 ) || (i%5==0 && i!=5)){
+    document.write(i+" -bu eded murekkebdir <br>");
+}else{
+    document.write(i+" -bu eded sadedir <br>");
+}
+}
 
 
 
