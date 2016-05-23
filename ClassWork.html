@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <!-- <h1>Laptop</h1>
+<li>cpu</li>
+<li>hard_disk</li>
+<li>ram</li>
+<li>os</li>
+<li>display_sie</li> -->
+    <script>
+    function Computer(name, cpu, hard_disk, ram, os, display_size) {
+        this.name = name;
+        this.cpu = cpu;
+        this.hard_disk = hard_disk;
+        this.ram = ram;
+        this.os = os;
+        this.display_size = display_size;
+        this.getName = function() {
+            return this.name;
+        };
+        this.getCpu = function() {
+            return this.cpu;
+        }
+        this.getHard_disk = function() {
+            return this.hard_disk;
+        };
+        this.getRam = function() {
+            return this.ram;
+        };
+        this.getOs = function() {
+            return this.os;
+        };
+        this.getDisplay_size = function() {
+            return this.display_size;
+        };
+    };
+    var myComp = new Computer("Lenovo", "ghz", "500Gb", "8Gb", "Window", "28 inch");
+    document.write("<ul>");
+    document.write("<li>" + myComp.getName() + "</li>");
+    document.write("<li>" + myComp.getCpu() + "</li>");
+    document.write("<li>" + myComp.getHard_disk() + "</li>");
+    document.write("<li>" + myComp.getRam() + "</li>");
+    document.write("<li>" + myComp.getOs() + "</li>");
+    document.write("<li>" + myComp.getDisplay_size() + "</li>");
+    document.write("</ul>");
+    </script>
+</body>
+
+</html>
