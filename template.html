@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+	<title>Codecanyon</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+</head>
+<style>
+ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+.header{
+	width: 100%;
+	height: 55px;
+	background-color:black;
+	margin: 0;
+	padding: 0;
+}
+.header img{
+	width: 200px;
+	height: 55px;
+	float: left;
+}
+
+.topbar{
+	width: 100%;
+	height: 55px;
+	background-color:#f8f8f8;
+	border-bottom: 1px solid #e7e7e7;
+	margin: 0;
+	padding: 0;
+	position:relative;
+}
+.topbar img{
+	width: 130px;
+	margin-top: 15px;
+
+}
+.menu-item{
+	float: left;
+	list-style: none;
+	padding: 0 20px;
+
+}
+.sub-menu {
+	list-style: none;
+	border:1px solid lightgrey;
+	padding: 0;
+	margin:0;
+	position: absolute;
+	background: #fff;
+	    margin: 0 -52px;
+	display: none;
+
+}
+.sub-menu li{
+	list-style: none;
+	padding: 10px 30px;
+	text-align: center;
+	border-bottom: 1px solid lightgrey;	
+	line-height: 20px;
+}
+.menu{
+	text-align: center;
+	color: grey;
+}
+
+/*.menu-item:hover{
+	background-color:#e7e7e7;
+}*/
+.sub-menu li:hover{
+	background-color: #e7e7e7;
+}
+
+.box{
+	height: 328px;
+	position: relative;
+}
+.boximage{
+	
+}
+.boximage img{
+	width: 100%;
+	position: relative;
+	transition: 0.5s all linear;
+}
+.boxtext{
+	font-size: 16px;
+	position: absolute;
+	bottom: 10px;
+	left:20px;
+}
+.boxtext p{
+	background: white;
+	color:#3498DB;
+
+	}
+.boxtext p:first-child{
+	font-weight: bold;
+}
+.social{
+	font-size: 23px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none; 	
+	}
+.social li{
+	/*border:1px solid #3498DB;*/
+	color: #fff;
+	background: #3498DB;
+	padding: 2px 5px;
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+</style>
+<body>
+<!-- <div id="foo"></div> -->
+
+<div class="header-container ">
+	<div class="header">
+		<img src="http://dmypbau5frl9g.cloudfront.net/assets/logos/envato_market-dee06317dbf75d406e29e1cd82fab4dd.svg"/>
+	</div>
+
+	<div class="topbar">
+		<div class="container" style="height:100%">
+			<img src="http://mediacity.co.in/myteam/images/logo.png"/>
+			<ul style="margin:0;float:right;line-height:55px;position: relative;z-index: 999;">
+				<li class="menu-item">
+					<span>4 Column</span>
+					<ul class="sub-menu" style=";">
+					<li>
+						<span>1-10 Style</span>
+					</li>
+					<li>
+						<span>11-20 Style</span>
+					</li>
+					<li>
+						<span>21-30 Style</span>
+					</li>
+					<li>
+						<span>31-40 Style</span>
+					</li>
+					<li>
+						<span>41-50 Style</span>
+					</li>
+
+					</ul>
+				</li>
+					
+				<li class="menu-item">
+					<span>4 Column</span>
+					<ul class="sub-menu">
+					<li>
+						<span>1-10 Style</span>
+					</li>
+					<li>
+						<span>11-20 Style</span>
+					</li>
+					<li>
+						<span>21-30 Style</span>
+					</li>
+					<li>
+						<span>31-40 Style</span>
+					</li>
+					<li>
+						<span>41-50 Style</span>
+					</li>
+
+					</ul>
+				</li>
+				</li>
+				<li class="menu-item">
+				<span>2 Column</span>
+					<ul class="sub-menu">
+					<li>
+						<span>1-10 Style</span>
+					</li>
+					<li>
+						<span>11-20 Style</span>
+					</li>
+					<li>
+						<span>21-30 Style</span>
+					</li>
+					<li>
+						<span>31-40 Style</span>
+					</li>
+					<li>
+						<span>41-50 Style</span>
+					</li>
+
+					</ul>
+				</li>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+<div class="main">
+	<div class="menu">
+		<h1><strong>STYLE 1</strong></h1>
+	</div>
+	<div class="container">
+		<div class="row" id="row">
+
+	</div>
+</div>
+
+
+<script>
+
+var li = document.getElementsByClassName('menu-item');
+var sub = document.getElementsByClassName('sub-menu');
+li[0].onclick=function(){
+	sub[0].style.display = "block";
+	this.style.background = "#e7e7e7";
+	li[1].style.background = "none";
+	li[2].style.background = "none";
+	sub[1].style.display="none";
+	sub[2].style.display="none";
+
+};
+li[1].onclick=function(){
+	sub[1].style.display = "block";
+	this.style.background = "#e7e7e7";
+	li[0].style.background = "none";
+	li[2].style.background = "none";
+	sub[0].style.display="none";
+	sub[2].style.display="none";
+};
+li[2].onclick=function(){
+	sub[2].style.display = "block";
+	this.style.background = "#e7e7e7";	
+	li[1].style.background = "none";
+	li[0].style.background = "none";
+	sub[0].style.display="none";
+	sub[1].style.display="none";
+};
+var menu = document.getElementsByClassName('main');
+menu[0].onclick= function(){
+	sub[0].style.display="none";
+	sub[1].style.display="none";
+	sub[2].style.display="none";
+};
+
+var row = document.getElementById("row");
+var array =[{
+	name:"TURANGA PARKER",
+	position:"Director",
+	image:"http://mediacity.co.in/myteam/images/team-style-01-01.jpg"
+},{
+	name:"MARIYA RAYAN", 
+	position:"Manager",
+	image:"http://mediacity.co.in/myteam/images/team-style-01-02.jpg"
+},{
+	name:"JERRY HU" , 
+	position:"Sales Manager",
+	image:"http://mediacity.co.in/myteam/images/team-style-01-03.jpg"
+},{
+	name:"SARA RAYAN" , 
+	position:"Support",
+	image:"http://mediacity.co.in/myteam/images/team-style-01-04.jpg"
+}
+];
+	for(i=0;i<array.length;i++){
+		var box = document.createElement("div");
+		box.className= "col-md-3 box";
+
+		var boximage = document.createElement("div");
+		boximage.className="boximage";
+		var image =document.createElement("img");
+		image.setAttribute("src", array[i].image);
+		boximage.appendChild(image);
+
+		var boxtext=document.createElement("div");
+		boxtext.className="boxtext";
+		var p1=document.createElement("p");
+		var p2=document.createElement("p");
+		p1.style.padding="7px 5px";
+		p2.style.margin="3px 0 0 0";
+		p2.style.padding="7px 5px";
+		p2.style.width="80px";
+		p1.appendChild(document.createTextNode(array[i].name));
+		p2.appendChild(document.createTextNode(array[i].position));
+		boxtext.appendChild(p1);
+		boxtext.appendChild(p2);
+
+		var social=document.createElement("div");
+		social.className = 'social';
+		var ul1=document.createElement("ul");
+		var li1 = document.createElement('li');
+		var li2 = document.createElement('li');
+		var li3 = document.createElement('li');
+		var li4 = document.createElement('li');
+		li1.innerHTML='<i class="fa fa-envelope"></i>';
+		li2.innerHTML='<i class="fa fa-facebook"></i>';
+		li3.innerHTML='<i class="fa fa-twitter"></i>';
+		li4.innerHTML='<i class="fa fa-linkedin"></i>';
+		ul1.appendChild(li1);
+		ul1.appendChild(li2);
+		ul1.appendChild(li3);
+		ul1.appendChild(li4);
+	 social.appendChild(ul1);
+
+
+		box.appendChild(boximage);
+		box.appendChild(boxtext);
+		box.appendChild(social);
+		row.appendChild(box);
+}
+
+image = document.getElementsByClassName('boximage');
+text =  document.getElementsByClassName('boxtext');
+social = document.getElementsByClassName('social');
+
+image[0].onmouseover= function(){
+	this.lastChild.style.left = "20px";
+	text[0].firstChild.style.color = "#fff";
+	text[0].firstChild.style.background = "#3498DB";
+	text[0].lastChild.style.color = "#fff";
+	text[0].lastChild.style.background = "#3498DB";
+	social[0].style.display = 'block';
+	// social[0].style.margin = '0 20px 0 0';
+};
+
+image[0].onmouseout= function(){
+	this.lastChild.style.left = "0";
+	text[0].firstChild.style.color = "#3498DB";
+	text[0].firstChild.style.background = "#fff";
+	text[0].lastChild.style.color = "#3498DB";
+	text[0].lastChild.style.background = "#fff";
+	social[0].style.display = 'none';
+	// social[0].style.left = '0px';
+};
+
+image[1].onmouseover= function(){
+	this.lastChild.style.left = "20px";
+	text[1].firstChild.style.color = "#fff";
+	text[1].firstChild.style.background = "#3498DB";
+	text[1].lastChild.style.color = "#fff";
+	text[1].lastChild.style.background = "#3498DB";
+	social[1].style.display = 'block';
+	// social[1].style.margin = '0 20px 0 0';
+};
+
+image[1].onmouseout= function(){
+	this.lastChild.style.left = "0";
+	text[1].firstChild.style.color = "#3498DB";
+	text[1].firstChild.style.background = "#fff";
+	text[1].lastChild.style.color = "#3498DB";
+	text[1].lastChild.style.background = "#fff";
+	social[1].style.display = 'none';
+	// social[0].style.left = '0px';
+};
+
+image[2].onmouseover= function(){
+	this.lastChild.style.left = "20px";
+	text[2].firstChild.style.color = "#fff";
+	text[2].firstChild.style.background = "#3498DB";
+	text[2].lastChild.style.color = "#fff";
+	text[2].lastChild.style.background = "#3498DB";
+	social[2].style.display = 'block';
+	// social[2].style.margin = '0 20px 0 0';
+};
+
+image[2].onmouseout= function(){
+	this.lastChild.style.left = "0";
+	text[2].firstChild.style.color = "#3498DB";
+	text[2].firstChild.style.background = "#fff";
+	text[2].lastChild.style.color = "#3498DB";
+	text[2].lastChild.style.background = "#fff";
+	social[2].style.display = 'none';
+	// social[0].style.left = '0px';
+};
+image[3].onmouseover= function(){
+	this.lastChild.style.left = "20px";
+	text[3].firstChild.style.color = "#fff";
+	text[3].firstChild.style.background = "#3498DB";
+	text[3].lastChild.style.color = "#fff";
+	text[3].lastChild.style.background = "#3498DB";
+	social[3].style.display = 'block';
+	// social[3].style.margin = '0 20px 0 0';
+};
+
+image[3].onmouseout= function(){
+	this.lastChild.style.left = "0";
+	text[3].firstChild.style.color = "#3498DB";
+	text[3].firstChild.style.background = "#fff";
+	text[3].lastChild.style.color = "#3498DB";
+	text[3].lastChild.style.background = "#fff";
+	social[3].style.display = 'none';
+	// social[0].style.left = '0px';
+};
+</script>
+
+</body>
+</html
